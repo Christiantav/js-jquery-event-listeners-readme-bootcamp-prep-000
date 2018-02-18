@@ -10,6 +10,13 @@ function frameIt() {
   });
 }
 
+function pressIt() {
+  $('#typing').on('keydown', function(key) {
+    if(key.which === 71) {
+      alert("Your form is going to be submitted now.")
+    }
+  }
+}
 
 $(document).ready(function(){
 getIt();
